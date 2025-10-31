@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sentence checker</title>
+</head>
+<body>
+    <script>
+        let sen= prompt("enter a sentence please ('hello')")
+        sen= sen.trim()
+        let k= sen.split(" ")
+        let words= k.length
+        let sub= prompt("enter substring to check")
+        let tor= sen.replace("hello","bye")
+        if (sen.includes(sub)){
+            alert(`number of words in sentence: ${words};\nYes, substring ("${sub}") is in main sentence ("${sen}");\nSentence with replaced word: "${tor}"`)
+        }else{
+            alert(`number of words in sentence: ${words};\nYes, substring ("${sub}") is not in main sentence ("${sen}");\nSentence with replaced word: "${tor}"`)
+
+        }
+    </script>
+</body>
+</html>
